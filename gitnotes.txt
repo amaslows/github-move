@@ -1,0 +1,14 @@
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git init
+Initialized empty Git repository in /home/amaslows/GITHUB/projectx/.git/
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git add .
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git commit -m "initialize repo"
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+fatal: empty ident name (for <amaslows@DESKTOP-ANC4K86.localdomain>) not allowed
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git config --global user.email "anthony.maslowski@gmail.com"
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git config --global user.name "Anthony Maslowski"
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ vi ~/.gitconfig
