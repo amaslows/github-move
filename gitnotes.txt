@@ -12,3 +12,44 @@ fatal: empty ident name (for <amaslows@DESKTOP-ANC4K86.localdomain>) not allowed
 amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git config --global user.email "anthony.maslowski@gmail.com"
 amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git config --global user.name "Anthony Maslowski"
 amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ vi ~/.gitconfig
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ vi ~/.gitconfig
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ ls
+ansible
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ vi gitnotes.txt
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ vi gitnotes.txt
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git commit -m "initialize repo"
+[master (root-commit) ce44bd1] initialize repo
+ 10 files changed, 127 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 ansible/playbooks/ansible.cfg
+ create mode 100644 ansible/playbooks/files/nginx.conf
+ create mode 100644 ansible/playbooks/files/nginx.crt
+ create mode 100644 ansible/playbooks/files/nginx.key
+ create mode 100644 ansible/playbooks/hosts
+ create mode 100755 ansible/playbooks/login.sh
+ create mode 100644 ansible/playbooks/templates/index.html.j2
+ create mode 100644 ansible/playbooks/web-notls.yml
+ create mode 100644 ansible/test.yml
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git add .
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git commit -m "initialize repo2"
+[master 239eeda] initialize repo2
+ 1 file changed, 14 insertions(+)
+ create mode 100644 gitnotes.txt
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git remote add origin https://github.com/amaslows/github-move.git
+amaslows@DESKTOP-ANC4K86:~/GITHUB/projectx$ git push -u origin master
+Username for 'https://github.com': amaslows
+Password for 'https://amaslows@github.com':
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (19/19), 4.63 KiB | 0 bytes/s, done.
+Total 19 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/amaslows/github-move.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
